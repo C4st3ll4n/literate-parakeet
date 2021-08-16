@@ -1,0 +1,32 @@
+### List a random user
+GET http://localhost:8000/api/user
+Accept: application/json
+
+### List all the products
+GET localhost:8000/api/products
+
+### Retrieve a product
+GET http://localhost:8000/api/products/1
+Accept: application/json
+
+###
+POST http://localhost:8000/api/products
+Content-Type: application/json
+
+{
+  "title": "title 1",
+  "image": "image 1"
+}
+
+###
+PUT localhost:8000/api/products/3
+Content-Type: application/json
+
+{
+  "title": "new_title",
+  "image": "new_image"
+}
+
+
+###
+DELETE localhost:8000/api/products/1
